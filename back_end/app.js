@@ -3,12 +3,13 @@ const app = express();
 const mongoose = require('mongoose');
 require("dotenv/config");
 app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send("inside the home page");
 })
 
-const userRoute = require("./routes/auth");
-const postRoute = require("./routes/posts");
+const userRoute = require("./Routes/auth");
+const postRoute = require("./Routes/posts");
 app.use("/api/users/", userRoute);
 app.use("/api/posts/", postRoute);
 
