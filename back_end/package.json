@@ -2,7 +2,7 @@
   "name": "back_end",
   "version": "1.0.0",
   "description": "",
-  "main": "entryPoint.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -10,8 +10,8 @@
   "author": "FIKRI Laila",
   "license": "ISC",
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
