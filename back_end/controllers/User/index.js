@@ -33,9 +33,11 @@ const register = async (req,res) => {
         password : hashedPassword
     });
    try {
-       await user.save();
-    //    res.status(200).json(user);
-       res.status(200).send({user : user});
+        const savedUser = await user.save();
+        const {_id , name, email} = savedUser;
+        const token = generateToken({ _id, email, name }, process.env.TOKEN_SECRET, savedUser.role)
+        res.header('auth-token', token).send(token);
+    //    res.status(200).send({user : user});
     //    res.status(200).send({user : savedUser._id});
 
    } catch (error) {
