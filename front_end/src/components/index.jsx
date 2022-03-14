@@ -7,4 +7,5 @@ import {Pricing} from "./Pricing";
 import {About} from "./About";
 import {Support} from "./Support";
 import {AllInOne} from "./AllInOne";
-export {LoginForm, RegisterForm, Navbar,About, Hero, Footer,Pricing, Support, AllInOne};
+import {AllQuays} from "./AllQuays";
+export {LoginForm, RegisterForm, Navbar,About, Hero, Footer,Pricing, Support, AllInOne, AllQuays};

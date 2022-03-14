@@ -14,9 +14,14 @@ export function Login() {
     if (FormData) {  
       axios
         .post("http://localhost:3000/login", FormData)
-        .then(res=>res.status === 200 && setAuth({ loggedIn: true }))
-        .then(()=>  navigate("/dashboard", {replace: true}))
+        .then(res => {
+          localStorage.setItem('token',res.headers['auth-token'])
+          res.status === 200 && setAuth({ loggedIn: true });
+          navigate("/dashboard", {replace: true});
+        })
         .catch((err) => console.log(err.response));
+        // .then(res=>res.status === 200 && setAuth({ loggedIn: true }))
+        // .then(()=>  navigate("/dashboard", {replace: true}))
     }
   },[FormData]);
 
