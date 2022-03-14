@@ -19,13 +19,13 @@ export function Login() {
     }
   },[FormData]);
 
-  useEffect(() => {
-    if (auth.loggedIn) {
-      navigate("/", {
-        replace: true,
-      });
-    }
-  }, [auth]);
+  // useEffect(() => {
+  //   if (auth.loggedIn) {
+  //     navigate("/", {
+  //       replace: true,
+  //     });
+  //   }
+  // },[auth]);
   
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">

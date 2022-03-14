@@ -1,4 +1,10 @@
 import {LoginForm} from "./LoginForm";
 import {RegisterForm} from "./RegisterForm";
 import {Navbar} from "./Navbar";
-export {LoginForm, RegisterForm, Navbar};
+import {Hero} from "./Hero";
+import {Footer} from "./Footer";
+import {Pricing} from "./Pricing";
+import {About} from "./About";
+import {Support} from "./Support";
+import {AllInOne} from "./AllInOne";
+export {LoginForm, RegisterForm, Navbar,About, Hero, Footer,Pricing, Support, AllInOne};

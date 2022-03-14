@@ -1,8 +1,21 @@
 import React from 'react';
-import {Navbar} from '../../components';
+import {Navbar, Hero,About, Support, AllInOne, Pricing,Footer} from '../../components';
 export  function Home() {
-  return <div>
-    <Navbar />
-    this is home page
-    </div>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Support />
+      <AllInOne />
+      <Pricing />
+      <Footer />
+    </>
+  )
+  // <div>
+  //   <Navbar />
+  //   <Hero />
+  //   <Footer />
+
+  //   </div>;
 }
