@@ -33,13 +33,7 @@ const getAllQuays = async () => {
 
 const deleteQuay = async (id) => {
     try {
-        await quayModel.bulkWrite([
-            {
-                deleteOne: {
-                    filter: { _id: id }
-                }
-            }
-        ])
+        await quayModel.findByIdAndDelete(id)
     } catch (error) {
         throw error
     }

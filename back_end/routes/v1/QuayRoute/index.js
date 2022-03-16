@@ -21,7 +21,7 @@ router.get("/getAllQuays", verifyToken, async (req, res) => {
     res.json(data)
 })
 
-router.post("/deleteQuay/:id", verifyToken, async (req, res) => {
+router.delete("/deleteQuay/:id", verifyToken, async (req, res) => {
     let { id } = req.params
     let data = await deleteQuay(id)
     res.json(true)
