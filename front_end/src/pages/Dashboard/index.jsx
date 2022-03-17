@@ -35,6 +35,7 @@ export function Dashboard() {
               <button className='px-8 py-3'>Sign Up</button></>) : (<button className='px-4 py-3 flex' onClick = {LogOut}><LogoutIcon className='w-5 mr-2'/>Logout</button>) }
           </div>
         </ul>
+        {/* <AddQuay/> */}
         <AllQuays/>
       </div>
     );

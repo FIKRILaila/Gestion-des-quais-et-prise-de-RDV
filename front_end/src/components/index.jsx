@@ -8,4 +8,5 @@ import {About} from "./About";
 import {Support} from "./Support";
 import {AllInOne} from "./AllInOne";
 import {AllQuays} from "./AllQuays";
-export {LoginForm, RegisterForm, Navbar,About, Hero, Footer,Pricing, Support, AllInOne, AllQuays};
+import {AddQuay} from "./AddQuay";
+export {LoginForm, RegisterForm, Navbar,About, Hero, Footer,Pricing, Support, AllInOne, AllQuays,AddQuay};
